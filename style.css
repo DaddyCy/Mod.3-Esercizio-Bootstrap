@@ -1,0 +1,188 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202020;
+    color: #ffffff;
+    
+}
+
+/* Navbar */
+#navbar{
+    padding-left: 11px;
+}
+.logo{
+    width: 60px;
+    height: 35px;
+}
+
+.start-nav li a{
+    color: #808080;
+    text-decoration: none;
+    padding: 0 4px;
+    font-size: 12px;
+}
+.start-nav li a:hover{
+    color: #ffffff;
+}
+.start-nav li {
+    display: inline;
+    list-style: none;
+}
+.end-nav  {
+     list-style: none;
+}
+.user{
+    width: 17px;
+    height: 17px;
+}
+.nav-link.dropdown-toggle{
+    color:#ffffff;
+}
+.nav-link{
+    color: #ffffff;
+    font-size: 10px;
+   padding-left: 10px;
+}
+.nav-link:hover{
+    color:#ff0000;
+}
+
+/* Header */
+.btn.btn-secondary.btn-sm{
+    background-color: #000000;
+}
+.dropdown-menu{
+    background-color:#d3d3d3;
+    opacity: 0.5;
+}
+.dropdown-item{
+    font-size: 13px;
+    color:#ff0000;
+}
+#menu-point .border{
+    color: #808080;
+}
+.bi.bi-list{
+    font-size: 11px;
+
+}
+#menu-line .border{
+    color: #808080;
+}
+.bi.bi-grid-fill{
+    font-size: 11px;
+    
+}
+
+/* Main */
+main{
+    padding-left: 37px;
+}
+
+
+/* Animazione Immagini */
+.carousel-inner .carousel-item img:hover{
+    animation: hover .8s forwards linear 1 normal .2s;
+}
+
+@keyframes hover{
+    0%{
+        opacity: 0.8;
+    }
+    
+    40%{
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    60%{
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#carouselFirst img{
+    width: 225px;
+    height: 130px;
+}
+#carouselSecond img{
+    width: 225px;
+    height: 130px;
+}
+#carouselThird img{
+    width: 225px;
+    height: 118px;
+}
+.carousel-control-prev{
+    
+    opacity: 0.3;
+}
+.carousel-control-next{
+    
+    opacity: 0.3;
+}
+
+/* Footer */
+.container.footer{
+    color: #808080;
+    font-size: 10px;
+
+}
+.span-border{
+    border:1px solid #808080;
+    padding: 3px;
+}
+
+/* Media-Query */
+@media (max-width:767px) {
+    #navbar{ display: flex;
+              flex-direction:column ;
+            }
+    .container.footer{
+                margin-left: -35px;
+            }
+    .carousel-control-prev{
+        margin-left: -15px;
+        margin-top: 45px;
+    }
+    .carousel-control-next{
+        margin-right:-5px;
+        margin-top: 45px;
+    }    
+    #navbar{
+        margin-bottom: 20px;
+       
+    }
+}
+@media (max-width:991px) {
+   #navbar{
+      margin-bottom: 30px;
+     }
+     .carousel-control-prev{
+        margin-left: -45px;
+        margin-top: 45px;
+    }    
+    .carousel-control-next{
+        margin-right:-99px;
+        margin-top: 45px;
+    }
+}    
+
+@media (min-width:992px) {
+    .carousel-control-prev{
+        margin-left: -88px;
+        margin-top: 45px;
+    }    
+    .carousel-control-next{
+        margin-right: -90px;
+        margin-top: 45px;
+    }
+}
